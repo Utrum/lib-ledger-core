@@ -334,6 +334,21 @@ namespace ledger {
                             {}
                     );
                     return KOMODO;
+                } else if (networkName == "utrum") {
+                    static const api::BitcoinLikeNetworkParameters UTRUM(
+                            "oot",
+                            {0x3C},
+                            {0x55},
+                            {0xF9, 0xEE, 0xE4, 0x8D},
+                            api::BitcoinLikeFeePolicy::PER_BYTE,
+                            10000,
+                            "Utrum Signed Message:\n",
+                            false,
+                            0,
+                            {sigHashType::SIGHASH_ALL},
+                            {}
+                    );
+                    return UTRUM;
                 } else if (networkName == "poswallet") {
                     static const api::BitcoinLikeNetworkParameters POSWALLET(
                             "posw",
@@ -404,6 +419,7 @@ namespace ledger {
                 getNetworkParameters("dogecoin"),
                 getNetworkParameters("stratis"),
                 getNetworkParameters("komodo"),
+                getNetworkParameters("utrum"),
                 getNetworkParameters("poswallet"),
                 getNetworkParameters("pivx"),
                 getNetworkParameters("clubcoin")
