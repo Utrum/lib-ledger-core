@@ -195,6 +195,14 @@ namespace ledger {
                             .unit("satoshi", 0, "satoshi")
                             .unit("komodo", 8, "KMD");
 
+            const api::Currency UTRUM =
+                  Currency("utrum")
+                          .forkOfBitcoin(networks::getNetworkParameters("utrum"))
+                          .bip44(141)
+                          .paymentUri("utrum")
+                          .unit("satoshi", 0, "satoshi")
+                          .unit("utrum", 8, "OOT");
+
             const api::Currency POSWALLET =
                     Currency("poswallet")
                             .forkOfBitcoin(networks::getNetworkParameters("poswallet"))
@@ -239,6 +247,7 @@ namespace ledger {
                 DOGECOIN,
                 STRATIS,
                 KOMODO,
+                UTRUM,
                 POSWALLET,
                 PIVX,
                 CLUBCOIN

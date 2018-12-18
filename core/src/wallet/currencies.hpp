@@ -63,6 +63,7 @@ namespace ledger {
             extern LIBCORE_EXPORT const api::Currency DOGECOIN;
             extern LIBCORE_EXPORT const api::Currency STRATIS;
             extern LIBCORE_EXPORT const api::Currency KOMODO;
+            extern LIBCORE_EXPORT const api::Currency UTRUM;
             extern LIBCORE_EXPORT const api::Currency POSWALLET;
             extern LIBCORE_EXPORT const api::Currency PIVX;
             extern LIBCORE_EXPORT const api::Currency CLUBCOIN;
